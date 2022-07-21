@@ -1,0 +1,36 @@
+@charset "UTF-8";
+
+pre {
+	font-family: sans-serif;
+}
+
+.mq01 {	background-color:#8fa; color: #093;}
+.mq02 { background-color:#8cf; color: #039;}
+
+/*720px 이상일 때 적용 */
+@media screen and (min-width:720px) {
+	body {background-color: #000;
+	color: #fff;}
+}
+
+/*1000px 이상일 때 적용*/
+@media screen and (min-width:1000px){
+	body {background-color: #dd5;
+	color: #550;}
+}
+
+/*장치종류 프린터일 때 적용 */
+ @media only print {
+	body{
+		background-color: #fff;
+		color: #000;}
+		.mq01 {	background-color:#fff; color: #000;}
+.mq02 { background-color:#fff; color: #000;}
+} 
+
+/* 화면 방향 일 때 적용 */
+
+@media screen and (orientation:landscape){
+ h2 {color: #06d;}
+ h3 {color: #0d6;}
+}
