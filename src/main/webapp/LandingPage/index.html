@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>スタバ　Landing Page</title>
+<link rel="stylesheet" href="style.css">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@300&display=swap" rel="stylesheet">
+</head>
+<body>
+	<section>
+	<div class="circle"></div>
+		<header>
+			<a href="#" ><img src="logo.png" class="logo"></a>
+			<ul>
+				<li><a href="">メニュー</a></li>
+				<li><a href="">新商品</a></li>
+				<li><a href="">イベント</a></li>
+				<li><a href="">お問い合わせ</a></li>		
+			</ul>
+		</header>
+		<div class="content">
+			<div class="textBox">
+				<h2>ただ一杯いのコーヒーじゃない<br>それは<span>スタバックス</span></h2>
+				<p>FIND YOUR TASTE. Our story begins in 1971 along the cobblestone streets of 
+				Seattle’s historic Pike Place Mconncarket. It was here where Starbucks opened its first store, 
+				offering fresh-roasted coffee beans</p>
+				<a href="#">詳細</a>
+		</div>
+		<div class="imgBox">
+			<img src="matcha.png" class="starbucks">
+		</div>	
+	 </div>
+	 <ul class="thumb">
+	 	<li><img src="matcha.png" onclick="imgSlider('matcha.png');changeCircleColor('#017143')"></li>
+	 	<li><img src="rime.png" onclick="imgSlider('rime.png');changeCircleColor('#bfff00')"></li>
+	 	<li><img src="tea.png" onclick="imgSlider('tea.png');changeCircleColor('#fcffca')"></li>
+	 </ul>
+	 <ul class="sci">
+	 	<li><a href="#"><img src="face.png" width="50px"></a></li>
+	 	<li><a href="#"><img src="twit.png" width="50px"></a></li>
+	 	<li><a href="#"><img src="insta.png" width="50px"></a></li>
+	 </ul>
+	</section>
+	<script type="text/javascript">
+		function imgSlider(anything){
+			document.querySelector('.starbucks').src = anything;
+		}
+		
+		function changeCircleColor(color){
+			const circle = document.querySelector('.circle');
+			circle.style.background = color;
+		}
+	</script>
+</body>
+</html>
