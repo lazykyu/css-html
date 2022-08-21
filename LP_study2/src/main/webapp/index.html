@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>コカコーラ Landing Page</title>
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.css"
+/>
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+	<section>
+	  <div class="circle"></div>
+	  <header>
+	  	<a href="#"><img src="logo.png" class="logo"></a>
+	  	<ul class="navigation">
+	  		<li><a href="#">メニュー</a></li>
+	  		<li><a href="#">新商品</a></li>
+	  		<li><a href="#">イベント</a></li>
+	  		<li><a href="#">お問い合わせ</a></li>
+	  	</ul>
+	  </header>
+	  <div class="content">
+	  	<div class="textBox">
+	  	 <h2>その気分を味わって！</h2>
+	  	 <p> Ipsum is simply dummy text of the printing and typesetting industry. 
+	  	 Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, 
+	  	 when an unknown printer took a galley of type and scrambled it to make a type specimen book. 
+	  	 It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged.</p>
+	  	 <a href="#">詳細</a>
+	  	</div>
+	  	
+	  	<div class="imgBox">
+	  		 <div class="swiper-container">
+    			<div class="swiper-wrapper">
+      				<div class="swiper-slide"><img src="cocacola1.png"></div>
+				    <div class="swiper-slide"><img src="cocacola2.png"></div>
+				    <div class="swiper-slide"><img src="cocacola3.png"></div>
+				    <div class="swiper-slide"><img src="cocacola4.png"></div>
+				    <div class="swiper-slide"><img src="cocacola5.png"></div>
+				    <div class="swiper-slide"><img src="cocacola6.png"></div>
+    			</div>
+  			</div>
+	  	</div>
+	  	
+	  </div>
+	  <ul class="sci">
+	  	<li><a href="#"><img src="facebook.png"></a></li>
+	  	<li><a href="#"><img src="twitter.png"></a></li>
+	  	<li><a href="#"><img src="instagram.png"></a></li>
+	  </ul>
+	</section>
+	<script src="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.js"></script>
+	<script >
+   	var swiper = new Swiper('.swiper-container', {
+      effect: 'coverflow',
+      grabCursor: true,
+      centeredSlides: true,
+      slidesPerView: 'auto',
+      coverflowEffect: {
+        rotate: 0,
+        stretch: 0,
+        depth: 200,
+        modifier: 1,
+        slideShadows: true,
+      },
+      pagination: {
+        el: '.swiper-pagination',
+      },
+      loop: true,
+    });
+  </script>
+</body>
+</html>
